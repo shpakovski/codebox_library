@@ -5,7 +5,7 @@
     <databaseInfo>
         <version>134481920</version>
         <UUID>DBB94BD6-9849-497F-82DF-ADF082FD6D80</UUID>
-        <nextObjectID>133</nextObjectID>
+        <nextObjectID>137</nextObjectID>
         <metadata>
             <plist version="1.0">
                 <dict>
@@ -251,5 +251,30 @@ ck51bWJlcjooaWQpbnVtYmVyCnsKICAgIE5TU3RyaW5nICpzdHJpbmcgPSBuaWw7CiAgICAKICAgIGZs
 KXN0cmluZ0Zvck51bWJlcjooaWQpdGhlTnVtYmVyOwoKQGVuZAo=
 </attribute>
         <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z132"></relationship>
+    </object>
+    <object type="TAG" id="z134">
+        <attribute name="name" type="string">Growl</attribute>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z135"></relationship>
+    </object>
+    <object type="SNIPPET" id="z135">
+        <attribute name="name" type="string">Remove PPC architecture from binary</attribute>
+        <attribute name="modified" type="date">325763285.93822401762008666992</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z137"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z136 z134"></relationship>
+    </object>
+    <object type="TAG" id="z136">
+        <attribute name="name" type="string">Mac App Store</attribute>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z135"></relationship>
+    </object>
+    <object type="ASSET" id="z137">
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">trick.sh</attribute>
+        <attribute name="notes" type="string">Thanks to this trick suggested by Craig Hockenberry in his Twitter, your app won't be rejected from the Mac App Store. Also, Danny Greg thinks that you'd better to keep projects for all frameworks and configure all build as you please. You can find more information at http://i-novation.tumblr.com/post/4983356050/strip-ppc-support-from-growl-framework-for-mac-app</attribute>
+        <attribute name="content" type="binary">Y2QgR3Jvd2wuZnJhbWV3b3JrL1ZlcnNpb25zL0EKbGlwbyAtcmVtb3ZlIHBwYyBHcm93bCAtb3V0
+cHV0IEdyb3dsLm5ldwptdiBHcm93bC5uZXcgR3Jvd2wKZmlsZSBHcm93bAo=
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z135"></relationship>
     </object>
 </database>

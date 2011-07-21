@@ -5,7 +5,7 @@
     <databaseInfo>
         <version>134481920</version>
         <UUID>DBB94BD6-9849-497F-82DF-ADF082FD6D80</UUID>
-        <nextObjectID>137</nextObjectID>
+        <nextObjectID>139</nextObjectID>
         <metadata>
             <plist version="1.0">
                 <dict>
@@ -115,7 +115,7 @@ dFZpZXcKewogICAgLy8gUmV0cmlldmUgc2Nyb2xsIHZpZXcgYW5kIHRleHQgY29udGFpbmVyCiAgICBO
     </object>
     <object type="TAG" id="z114">
         <attribute name="name" type="string">Cocoa</attribute>
-        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z123 z129 z113 z115"></relationship>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z123 z115 z129 z113 z138"></relationship>
     </object>
     <object type="SNIPPET" id="z115">
         <attribute name="name" type="string">Get an average color from Desktop image</attribute>
@@ -276,5 +276,21 @@ KXN0cmluZ0Zvck51bWJlcjooaWQpdGhlTnVtYmVyOwoKQGVuZAo=
 cHV0IEdyb3dsLm5ldwptdiBHcm93bC5uZXcgR3Jvd2wKZmlsZSBHcm93bAo=
 </attribute>
         <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z135"></relationship>
+    </object>
+    <object type="SNIPPET" id="z138">
+        <attribute name="name" type="string">Template for dispatch_after</attribute>
+        <attribute name="modified" type="date">328474201.54613298177719116211</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z139"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z114"></relationship>
+    </object>
+    <object type="ASSET" id="z139">
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">asset.m</attribute>
+        <attribute name="content" type="binary">ZGlzcGF0Y2hfYWZ0ZXIoZGlzcGF0Y2hfd2FsbHRpbWUoTlVMTCwgX18yLjBfXyAqIE5TRUNfUEVS
+X1NFQyksIGRpc3BhdGNoX2dldF9tYWluX3F1ZXVlKCksIF57Cn0pOwo=
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z138"></relationship>
     </object>
 </database>

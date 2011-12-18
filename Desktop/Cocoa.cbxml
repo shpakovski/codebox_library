@@ -5,7 +5,7 @@
     <databaseInfo>
         <version>134481920</version>
         <UUID>DBB94BD6-9849-497F-82DF-ADF082FD6D80</UUID>
-        <nextObjectID>154</nextObjectID>
+        <nextObjectID>165</nextObjectID>
         <metadata>
             <plist version="1.0">
                 <dict>
@@ -42,7 +42,7 @@
                     <integer>3</integer>
                     <key>NSStoreModelVersionIdentifiers</key>
                     <array>
-                        <data></data>
+                        <string></string>
                     </array>
                 </dict>
             </plist>
@@ -342,11 +342,11 @@ Z3JvdW5kVGFzayA9IFthcHBsaWNhdGlvbiBiZWdpbkJhY2tncm91bmRUYXNrV2l0aEV4cGlyYXRpb25I
     </object>
     <object type="TAG" id="z147">
         <attribute name="name" type="string">CocoaTouch</attribute>
-        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z146 z151"></relationship>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z151 z164 z146"></relationship>
     </object>
     <object type="TAG" id="z148">
         <attribute name="name" type="string">iOS</attribute>
-        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z146 z151"></relationship>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z151 z164 z146"></relationship>
     </object>
     <object type="TAG" id="z149">
         <attribute name="name" type="string">GCD</attribute>
@@ -389,5 +389,28 @@ bHRzID0gW05TTXV0YWJsZURpY3Rpb25hcnkgZGljdGlvbmFyeVdpdGhDb250ZW50c09mRmlsZTpbW05T
     <object type="TAG" id="z154">
         <attribute name="name" type="string">Mac</attribute>
         <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z153"></relationship>
+    </object>
+    <object type="TAG" id="z157">
+        <attribute name="name" type="string">JavaScript</attribute>
+        <relationship name="snippets" type="0/0" destination="SNIPPET"></relationship>
+    </object>
+    <object type="SNIPPET" id="z164">
+        <attribute name="name" type="string">How to set the "do not back up" attribute</attribute>
+        <attribute name="modified" type="date">342007808.53308802843093872070</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z165"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z147 z148"></relationship>
+    </object>
+    <object type="ASSET" id="z165">
+        <attribute name="notes" type="string">iOS 5.0.1 beta introduced a new "do not back up" attribute for specifying files that should remain on device, even in low storage situations. We can use this attribute with data that can be recreated but needs to persist even in low storage situations for proper functioning of your app or because customers expect it to be available during offline use. This attribute works on marked files regardless of what directory they are in, including the Documents directory. These files will not be purged and will not be included in the user's iCloud or iTunes backup. Because these files do use on-device storage space, your app is responsible for monitoring and purging these files periodically.
+
+To set the "do not back up" attribute, add the following method to a class in your application. Whenever you create a file that should not be backed up to iCloud, write the data to the file and then call this method, passing in a URL that points to the file.</attribute>
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">Class.m</attribute>
+        <attribute name="content" type="binary">I2luY2x1ZGUgPHN5cy94YXR0ci5oPgoKI2RlZmluZQlYQVRUUl9NT0JJTEVCQUNLVVBfTkFNRSAi
+Y29tLmFwcGxlLk1vYmlsZUJhY2t1cCIKDS0gKEJPT0wpc2V0U2tpcEJhY2t1cEF0dHJpYnV0ZUZvclVSTDooTlNVUkwgKilmaWxlVVJMIGVycm9yOihOU0Vycm9yICoqKWVycm9yUHRyCnsKICAgIHVfaW50OF90IGIgPSAxOwogICAgQk9PTCBzdWNjZXNzID0gKHNldHhhdHRyKGZpbGVVUkwucGF0aC5maWxlU3lzdGVtUmVwcmVzZW50YXRpb24sIFhBVFRSX01PQklMRUJBQ0tVUF9OQU1FLCAmYiwgMSwgMCwgMCkgPT0gMCk7CiAgICBpZiAoIXN1Y2Nlc3MgJiYgKGVycm9yUHRyICE9IE5VTEwpKQogICAgewogICAgICAgIE5TU3RyaW5nICplcnJvclN0cmluZyA9IFtOU1N0cmluZyBzdHJpbmdXaXRoRm9ybWF0OkAiJXMiLCBzdHJlcnJvcihlcnJubyldOwogICAgICAgIE5TRGljdGlvbmFyeSAqdXNlckluZm8gPSBbTlNEaWN0aW9uYXJ5IGRpY3Rpb25hcnlXaXRoT2JqZWN0OmVycm9yU3RyaW5nIGZvcktleTpOU0xvY2FsaXplZERlc2NyaXB0aW9uS2V5XTsKICAgICAgICAqZXJyb3JQdHIgPSBbTlNFcnJvciBlcnJvcldpdGhEb21haW46W05TQnVuZGxlIG1haW5CdW5kbGVdLmJ1bmRsZUlkZW50aWZpZXIgY29kZTplcnJubyB1c2VySW5mbzp1c2VySW5mb107CiAgICB9CiAgICByZXR1cm4gc3VjY2VzczsKfQo=
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z164"></relationship>
     </object>
 </database>
